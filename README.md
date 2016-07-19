@@ -13,7 +13,7 @@ This is an index of the CTF solutions I have published on [my blog](www.grocid.n
 
 ####2016
 
-[Collision course](https://grocid.net/2016/06/05/backdoorctf16-collision-course/) (350 points)
+[Collision course](https://grocid.net/2016/06/05/backdoorctf16-collision-course/) (350 points)<br>
 [Baby](https://grocid.net/2016/06/05/backdoorctf16-baby/) (200 points)
 
 ### BCTF
@@ -36,7 +36,7 @@ This is an index of the CTF solutions I have published on [my blog](www.grocid.n
 
 ### Internetwache
 
-[Crypto 60](https://grocid.net/2016/02/22/internetwache-crypto-60/) (60 points)
+[Crypto 60](https://grocid.net/2016/02/22/internetwache-crypto-60/) (60 points)<br>
 [Crypto 50](https://grocid.net/2016/02/22/internetwache-crypto-50/) (50 points)
 
 ### Nuit du Hack
@@ -53,24 +53,24 @@ This is an index of the CTF solutions I have published on [my blog](www.grocid.n
 
 #### 2015
 
-[Curious](https://grocid.net/2015/04/20/plaidctf-2015-curious/) (70 points)
+[Curious](https://grocid.net/2015/04/20/plaidctf-2015-curious/) (70 points)<br>
 [Strength](https://grocid.net/2015/04/20/plaidctf-2015-strength/) (110 points)
 
 ### SCTF
 
-[Space Friends](https://grocid.net/2016/04/15/sctf-space-friends/) (200 points)
-[Schensted](https://grocid.net/2016/04/15/sctf16-schensted/) (110 points)
+[Space Friends](https://grocid.net/2016/04/15/sctf-space-friends/) (200 points)<br>
+[Schensted](https://grocid.net/2016/04/15/sctf16-schensted/) (110 points)<br>
 [Ed25519](https://grocid.net/2016/04/14/sctf-ed25519/) (40 points)
 
 ## TU CTF
 
 #### 2016
 
-[Secure Auth](https://grocid.net/2016/05/15/tu-ctf-secure-auth/) (150 points)
-[Hash'n'bake](https://grocid.net/2016/05/15/tu-ctf-hashnbake/) (200 points)
+[Secure Auth](https://grocid.net/2016/05/15/tu-ctf-secure-auth/) (150 points)<br>
+[Hash'n'bake](https://grocid.net/2016/05/15/tu-ctf-hashnbake/) (200 points)<br>
 [Pet Padding Inc.](https://grocid.net/2016/05/15/tu-ctf-pet-padding-inc/) (150 points)
 
 ##VolgaCTF
 
-[XXY](https://grocid.net/2016/03/27/volgactf-xxy/) (300 points)
+[XXY](https://grocid.net/2016/03/27/volgactf-xxy/) (300 points)<br>
 [Lazy](https://grocid.net/2016/03/27/volgactf-lazy/) (250 points)
