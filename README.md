@@ -6,7 +6,7 @@ This is an index of the CTF solutions I have published on [my blog](www.grocid.n
 
 #### 2016
 
-[Equation](https://grocid.net/2016/03/14/0ctf-equation/) (2 points)
+[Equation](https://grocid.net/2016/03/14/0ctf-equation/) (2 points)<br>
 [RSA?](https://grocid.net/2016/03/14/0ctf-rsa-writeup/) (2 points)
 
 ### BackdoorCTF
