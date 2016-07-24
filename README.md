@@ -62,7 +62,7 @@ This is an index of the CTF solutions I have published on [my blog](www.grocid.n
 [Schensted](https://grocid.net/2016/04/15/sctf16-schensted/) (110 points)<br>
 [Ed25519](https://grocid.net/2016/04/14/sctf-ed25519/) (40 points)
 
-## TU CTF
+### TU CTF
 
 #### 2016
 
@@ -70,7 +70,7 @@ This is an index of the CTF solutions I have published on [my blog](www.grocid.n
 [Hash'n'bake](https://grocid.net/2016/05/15/tu-ctf-hashnbake/) (200 points)<br>
 [Pet Padding Inc.](https://grocid.net/2016/05/15/tu-ctf-pet-padding-inc/) (150 points)
 
-##VolgaCTF
+###VolgaCTF
 
 [XXY](https://grocid.net/2016/03/27/volgactf-xxy/) (300 points)<br>
 [Lazy](https://grocid.net/2016/03/27/volgactf-lazy/) (250 points)
