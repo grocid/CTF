@@ -23,7 +23,7 @@ Looking at the requests, they go to [www.dopefish.com](www.dopefish.com). This d
 
 If we look at the length of the BASE64 encoded data, we note that doesn't decode separately. BUT -- when combined -- it adds up to length 256. Hmm... Let us decode it! We end up with a lot of repeated occurances of `317`. Let us first remove the non-relevant data(?) and look at the packets:
 
-![decoded](threat1/decoded.png)
+[decoded](threat1/decoded.png)
 
 Do you see it? The flag? Hacking together some Python code...
 
