@@ -45,7 +45,7 @@ This is an index of the CTF solutions I have published on [my blog](www.grocid.n
 
 #### 2016
 
-[Threat tier](/LabyREnth/Readme.MD)
+[Threat tier](/LabyREnth/README.MD)
 
 ### Nuit du Hack
 
