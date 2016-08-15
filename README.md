@@ -41,6 +41,12 @@ This is an index of the CTF solutions I have published on [my blog](www.grocid.n
 [Crypto 60](https://grocid.net/2016/02/22/internetwache-crypto-60/) (60 points)<br>
 [Crypto 50](https://grocid.net/2016/02/22/internetwache-crypto-50/) (50 points)
 
+### LabyREnth
+
+#### 2016
+
+[Threat tier](/LabyREnth/Readme.MD)
+
 ### Nuit du Hack
 
 #### 2016
