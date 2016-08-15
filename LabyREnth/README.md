@@ -17,13 +17,13 @@ Getting the PCAP into Wireshark, we find a string `<!-- ohce "=4iLuMXblV2cgQXagM
 
 Looking at the requests, they go to [www.dopefish.com](www.dopefish.com). This domain is owned by someone else, so the task clearly not attacking that website.
 
-[wirecap](threat1/dopecap.png)
+![wirecap](threat1/dopecap.png)
 
 #### Analyzing the data
 
 If we look at the length of the BASE64 encoded data, we note that doesn't decode separately. BUT -- when combined -- it adds up to length 256. Hmm... Let us decode it! We end up with a lot of repeated occurances of `317`. Let us first remove the non-relevant data(?) and look at the packets:
 
-[decoded](threat1/decoded.png)
+![decoded](threat1/decoded.png)
 
 Do you see it? The flag? Hacking together some Python code...
 
@@ -72,7 +72,7 @@ once you solve the challenge, submit your completed rule to 52.41.90.65 port 260
 
 Mkay... and the GIF file is:
 
-[animation](threat2/jareth1.gif).
+![animation](threat2/jareth1.gif).
 
 Cheeky!
 
@@ -322,7 +322,7 @@ g.write(''.join(data)) # write new PCAP
 
 Looking inside `data_fragments.pcap`, we find a TLS1.2 session connecting to Google, but it is encrypted and we don't have the key. The session is using a relatively strong cipher suite (`TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`), so there is no chance brekaing it. OK, now what... Let us take a look at the pcap:
 
-[image](threat5/wireshark_pcap.png)
+![image](threat5/wireshark_pcap.png)
 
 There is something strange about the names. With a little XOR magic (well, not magic really but...), we find that the key is `PAN{Y0 D0g, I Heard Y0u Like PCAPS :D}`. 
 
@@ -484,11 +484,11 @@ def decrypt(X):
 
 Trying out `decrypt('405E520E4A0E6F3401584E0A4E121E00322C24793B7E6C3304594B0E41131B032C6867207A3E2A2B484553174C0E064724696363753C372F5B40550117061B0A')` gives us a link to a tweet: 
 
-[twitter](threat7/borgtwitter.jpg)
+![twitter](threat7/borgtwitter.jpg)
 
 from the Twitter account @borgcommlink:
 
-[borgcommlink](threat7/borgtwittera.png)
+![borgcommlink](threat7/borgtwittera.png)
 
 It contains an encrypted message; running `decrypt('046E3210462A496D5479450650722E44367A33283E3726641347435D400C0C0B7E6E696E3E2C2A3C4B5D5B1017061B0A')` gives us a Youtube [link](www.youtube.com/watch?v=rTAx8r_090o). Seemingly uninteresting. But, in the code, there is a DATA parameter which takes Youtube links. Maybe we can put a new link here? Or just send the encrypted message without messing with the key...
 
