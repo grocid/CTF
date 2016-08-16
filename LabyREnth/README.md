@@ -21,11 +21,7 @@ Looking at the requests, they go to [www.dopefish.com](www.dopefish.com). This d
 
 #### Analyzing the data
 
-If we look at the length of the BASE64 encoded data, we note that doesn't decode separately. BUT -- when combined -- it adds up to length 256. Hmm... Let us decode it! We end up with a lot of repeated occurances of `317`. Let us first remove the non-relevant data(?) and look at the packets:
-
-[decoded](threat1/decoded.png)
-
-Do you see it? The flag? Hacking together some Python code...
+If we look at the length of the BASE64 encoded data, we note that doesn't decode separately. BUT -- when combined -- it adds up to length 256. Hmm... Let us decode it! We end up with a lot of repeated occurances of `317`. Let us first remove the non-relevant data(?). Hacking together some Python code...
 
 ```python
 import re, dpkt, base64
@@ -56,6 +52,41 @@ print string
 ```
 
 ...and running it gives `+PAN{th3D0p3fshl1v3s}+`. Great!
+
+NOTE: Vladimir Okob pointed out that there are actually some ASCII graphics hidden (which was not really relevant for progressing, but still...):
+
+```
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW..;;;;;.WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWW.;;;;;;;WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWW;;;;;;;;;WWWWWWWWWWWWWWWWWWWWWW..WWWWWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWW.;;;;;;;;.WWWWWWWWWWWWWWWWWWWWWWW..;;.WWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWW...;;;.......;;..WWWWWWWWWWWWWWWWWWWWWWWW.;;..WWWWWWWWW
+WWWWWWWWWWWWWWWW...;;;;;P;;;;;;;;;;;;;;;;..WWWWWWWWWWWWWWWWWWWW.;;;.WWWWWWWW
+WWWWWWWWWWWWWW.;;;;;;;;;;A;;;;;;;;;;;;;;;;;;..WWWWWWWWWWWWWWWWW.;;;;..WWWWWW
+WWWWWWWWWWW;;;;;;;;;;;;;;;N;;;;;;;;;;;;;;;;;;;;;.WWWWWWWWWWWWWW.;;;;;..WWWWW
+WWWWWWWWW.;;;;;;;;;;;;;;;;;{;;;;;;;;;;;;;;;;;;;;;;.WWWWWWWWWWWW.;;;;;;..WWWW
+WWWWWWW....;;;;;;;;;;;;;;;;;t;;;;;;;;;;;;;;;;;;;;;;.WWWWWWWWWW.;;;;;;;;..WWW
+WWWWW.WWW..WWWWV..;;;;;;;;;;;h;;;;;;;;;;;;;;;;;;;;;+..WWWWWWW.;;;;;;;;;..WWW
+WWW.WWWWWWWWWWWWWWWW;;;;;;;;;;3;;;;;;;;;;;;;;;;;;;;;;..WWWW.;;;;;;;;;;;..WWW
+WW.VW......WWWWWWWWW.;;;;;;;;;;D;;;;;;;;;;;;;;;;;;;;;;;....;;;;;;;;;;;..WWWW
+WW.WW......WWWWWWWWWW.;;;;;;;;;;0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;..WWWWW
+WW..WWW.....WWWWWWWWV.;;;;;;...;;p;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;..WWWWWWWW
+WW.;.W.WWWWWWWWWWWWW.;;;;;;;;..;;;3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;.WWWWWWWW
+WW...;.VW..WWWWWWWW.;..;;;;;;..;;;;f;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;..WWWWWW
+WWW......;;;......;;;;;;..;;;..;;;;;s;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;..WWWWW
+WWW.WW.VV...............;;;;;..;;;;;;h;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;..WWWW
+WWW.WW.WWWWV.;;;;;;.;....;;;...;;;;;;;l;;;;;;;;;;;;;;;;....;;;;;;;;;;;..WWWW
+WWW.WW.WWWWV....;;;;;;;..;;;..;;;;;;;;;1;;;;;;;;;;;;;..WWWW..;;;;;;;;;..WWWW
+WWW.WW.WWWWV.;;;;;;.;;;;.;;;;;;;;;;;;;;;v;;;;;..;;....WWWWWW..;;;;;;;;..WWWW
+WWW.WW.WWWWV.....;;;;;;;;;;;;;;;;;;;;;;;;3.;;;;....WWWWWWWWWWW.;;;;;;..WWWWW
+WWW.WW.WWWWV.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;s;;.....WWWWWWWWWWWW.;;;;;;..WWWWW
+WWW....WWWWV..;;;;;;;.;;;;;;;;;;;;;;;;;;;;.}....WWWWWWWWWWWWWW.;;;;;..WWWWWW
+WWWWWWW...WV.WW......+;;;;;;;;;;;;;;;;;;;;;...WWWWWWWWWWWWWWW.;;;;;;.WWWWWWW
+WWWWWWWWWWWWWWWWWWWWW..;;;;;;;;;;;;;;;;;...WWWWWWWWWWWWWWWWWW.;;;..WWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWW..;;;;;;;;;...WWWWWWWWWWWWWWWWWWWWWW.;;.WWWWWWWWWWWW
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+```
 
 ## 2. yara0
 
