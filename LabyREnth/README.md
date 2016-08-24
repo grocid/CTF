@@ -232,7 +232,7 @@ $ cat doc.yar | nc 52.37.130.153 2600
 SUCCESS! KEY IS: PAN{7H1r7EEn-hOuR_71me_l1M17}
 ```
 
-Whoa, that was almost too simple... or maybe we were just lucky? ;-)
+Whoa, that was almost too simple... or maybe we were just lucky? ;-) Turns out we were a bit [lucky](https://github.com/grocid/CTF/issues/1).
 
 ## 5. Shrapnel / hello.pcap
 
