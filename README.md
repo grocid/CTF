@@ -34,6 +34,12 @@ This is an index of the CTF solutions I have published on [my blog](www.grocid.n
 
 [b3s23](https://grocid.net/2016/05/22/defcon-ctf-b3s23-partial/)
 
+### IceCTF
+
+#### 2016
+
+[A few collected solutions](/IceCTF/2016/README.md)
+
 ### Internetwache
 
 #### 2016
