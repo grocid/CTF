@@ -1,6 +1,6 @@
 # IceCTF Solutions
 
-This page contains some of the challanges I solved during IceCTF '16.
+This page contains some of the challenges I solved during IceCTF '16.
 
 ## Reconnaissance & Forensics
 ### Complacement (40 p)
