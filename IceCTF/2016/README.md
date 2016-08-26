@@ -304,7 +304,7 @@ def oracle(plaintext):
     s.recv(1024)
     return base64.b64decode(s.recv(1024))
     
-known_prefix = 'IceCTF{unleash_th3_Blocks_aNd_find_what_you_seek'
+known_prefix = 'IceCTF{'
 
 print '[+] Running trying plaintexts...'
 
