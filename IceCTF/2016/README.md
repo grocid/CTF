@@ -232,7 +232,7 @@ c=0x3dbf00a02f924a70f44bdd69e73c46241e9f036bfa49a0c92659d8eb0fe47e42068eaf156a9b
 
 ```
 
-Looking up N on [factordb.com](factordb.com), we find that it has a very small factor 57970027. Hence, we may compute ϕ(N) = (57970027 - 1) × (N / 57970027 - 1). Finally, the secret exponent is d = e⁻¹ mod ϕ(N). Knowning this, we may decrypt c.
+Looking up N on [factordb.com](http://factordb.com), we find that it has a very small factor 57970027. Hence, we may compute ϕ(N) = (57970027 - 1) × (N / 57970027 - 1). Finally, the secret exponent is d = e⁻¹ mod ϕ(N). Knowning this, we may decrypt c.
 
 The code
 
@@ -392,7 +392,7 @@ IceCTF{linear_algebra_plus_led_zeppelin_are_a_beautiful_m1xture}
 ```
 ### Round Rabins (70 p)
 
-Breaking Rabin cryptosystem is hard if the primes were chosen properly. This is probably the flaw here, or the challenge would be computationally hard. Lets try [factordb.com]. It reports that `N` is square. OK, great.
+Breaking Rabin cryptosystem is hard if the primes were chosen properly. This is probably the flaw here, or the challenge would be computationally hard. Lets try [factordb.com](http://factordb.com). It reports that `N` is square. OK, great.
 
 ```python
 
