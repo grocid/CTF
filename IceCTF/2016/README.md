@@ -151,7 +151,7 @@ $ python quine_gen.py 1 | cat quine.c | nc quine.vuln.icec.tf 5500
 //I
 ```
 
-Now this is where things get interesting. The code obviously works for `I`, but even for incorrect guesses. And it prints as many chars of the flag as we like! Seemingly, the check ignored any comments. So after setting the read length (`length = sys.argv[1]`)sufficiently large we can submit auto-generated code as follows:
+Now this is where things get interesting! The code obviously works for `I`, but even for incorrect guesses. Also, it prints as many chars of the flag as we like! Seemingly, the server check actually ignores comments, i.e., chars after `//`. So, by setting the read length (`length = sys.argv[1]`) sufficiently large, we can submit auto-generated code as follows:
 
 ```
 $ python quine_gen.py 32 | cat quine.c | nc quine.vuln.icec.tf 5500
