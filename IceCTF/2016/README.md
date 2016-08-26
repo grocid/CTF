@@ -591,4 +591,4 @@ Great :-)
 
 # Conclusion
 
-This was a fun CTF, perfect for beginners. Good diversity and entertaining problems, no complicated problems that require no though and only large amounts of work or guessing. Some quirks with unintended vulnerabilities in some challenges along they way, but they organizers did a good job.
+This was a fun CTF, perfect for beginners. Good diversity and entertaining problems, no complicated problems that require no though and only large amounts of work or guessing. Some quirks with unintended vulnerabilities in some challenges along they way, but the organizers did a good job.
