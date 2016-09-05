@@ -86,6 +86,14 @@ This is an index of the CTF solutions I have published on [my blog](www.grocid.n
 [Hash'n'bake](https://grocid.net/2016/05/15/tu-ctf-hashnbake/) (200 points)<br>
 [Pet Padding Inc.](https://grocid.net/2016/05/15/tu-ctf-pet-padding-inc/) (150 points)
 
+### TWCTF
+
+####2016
+[Palindrome](TWCTF/2016#palindrome-30-p) (30 points)<br>
+[Twin Primes](TWCTF/2016#twin-primes-50-p) (50 points)<br>
+[Super Express](TWCTF/2016#super-express-100-p) (100 points)<br>
+[Pinhole Attack](TWCTF/2016#pinhole-attack-500-p) (500 points)
+
 ###VolgaCTF
 
 #### 2016
