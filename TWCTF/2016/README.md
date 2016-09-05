@@ -148,7 +148,7 @@ TWCTF{Faster_Than_Shinkansen!}
 
 # Pinhole Attack (500 p)
 
-This is only a partial solution, but I spent several hours on it (essentially all the time I spent for the CTF) so I figured I wanted to write it down. During the CTF, I developed a method which queries the oracle for ciphertexts c × (2ⁱ)ᵉ for i ∈ {0,1,2,...}. This cause the message to shift. Let N denote the modulus. If the message m has the property m × 2 < N, then it gets shifted properly. But if  m × 2 > N, then q = 2¹⁰²⁴ - N gets added to the message. We can detect this with a certain probability.
+This is only a partial solution, but I spent several hours on it (essentially all the time I spent for the CTF) so I figured I wanted to write it down. During the CTF, I developed a method which queries the oracle for ciphertexts c × (2ⁱ)ᵉ for i ∈ {0,1,2,...}. This causes the message to shift. Let N denote the modulus. If the message m has the property m × 2 < N, then it gets shifted properly. But if  m × 2 > N, then q = 2¹⁰²⁴ - N gets added to the message. We can detect this with a certain probability.
 
 If we look at `(q >> 512) & 3`, it is equal to something like
 
@@ -168,7 +168,7 @@ query     observation
  i+1   ...a|bc|de....   <--- we observed bc (received)
 
 ```
-*Case 0* : We may also conclude that if b remains constant and the observed c = 1, then m × 2 < N. This is because, for the bit in q appear at the most significant observed position is added, then b would flip unless we had a carry from before. q is 0 in its least signficant observed position, so the only way to generate a carry to b is if c = 1 and we got a carry. But then the observed c would be 0. So this is a contradiction, proving our claim. 
+*Case 0* : We may also conclude that if b remains constant and the observed c = 1, then m × 2 < N. Here is why: for the bit in q to appear at the most significant observed position is added, then b would flip unless we had a carry from before. q is 0 in its least signficant observed position, so the only way to generate a carry to b is if c = 1 and we got a carry. But then the observed c would be 0. So this is a contradiction, proving our claim. 
 
 The two implcations below hold with probability 1:
 
@@ -182,17 +182,17 @@ There are
 ```
     Bbc
     ---
-    000    (-) <-- don't know!
+    000    (-) <-- do not know!
     001    (0)
     010    (1)
     011    (1)
     100    (1)
     101    (1)
-    110    (-) <-- don't know!
+    110    (-) <-- do not know!
     111    (0)
 ```
 
-There are some other cases when we do not get any information directly. In the table above, we see that the unknown case occurs with probability 1/4.  The output below shows the result of the above rules. The '-' char denotes when we dont know. '1' at position i means m × 2ⁱ > N and '0' that m × 2ⁱ < N.
+There are some other cases when we do not get any information directly. In the table above, we see that the unknown case occurs with probability 1/4.  The output below shows the result of the above rules. The '-' char denotes the case when we do not know. '1' at position i means m × 2ⁱ > N and '0' that m × 2ⁱ < N.
 
 ```
 0-11101000001-11111010-----0-1--1-0-111010-100--0--01--01-1-----1--100-0--0---1--10-0-1--1-1-1-010--1-10-1011---11-10-1001
@@ -268,4 +268,4 @@ m
     print dd[1][1]
 ```
 
-I tried running the code on a local oracle with several known messages, and I could verify that the bounds indeed did converge to correctly. However, gathering queries sufficiently many queries for the bounds to converge completely proved to be difficult, even with threading.
+I tried running the code on a local oracle with several known messages, and I could verify that the bounds indeed did converge correctly. However, gathering queries sufficiently many queries for the bounds to converge completely proved to be difficult, even with threading.
