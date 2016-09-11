@@ -7,8 +7,8 @@ public parameters: N, g, k
 secret parameter: x
 
 Client                                                 	   A  	   	    Server
-A ↜ R                          	   	   	   	            ------>
-x ← hash(salt,email,password)                          	   	   	        x ← hash(salt,email,password)
+A ↜ R                                                   ------>
+x ← hash(salt,email,password)                                           x ← hash(salt,email,password)
                                                        	   b  	   	    b ↜ R
                               	   	   	   	            <------         B ← k × gˣ + gᵇ (mod N)
 u ← hash(A,B)                                          	   	   	   	    u ← hash(A,B)
