@@ -1,0 +1,2 @@
+strings -a evidence.zip
+flag{th3_vi11i4n_w3_n33d_#freeleffen}

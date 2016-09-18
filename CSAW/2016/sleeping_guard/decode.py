@@ -1,0 +1,28 @@
+# extracted from reference image
+header = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A, 
+          0x00, 0x00, 0x00, 0x0D, 0x49, 0x48, 0x44, 0x52, 
+          0x00, 0x00, 0x07, 0x9C, 0x00, 0x00, 0x05, 0x7A, 
+          0x08, 0x06, 0x00, 0x00, 0x00, 0x31, 0xA6, 0x00, 
+          0xF6, 0x00, 0x00, 0x00]
+
+f = open('magic.png', 'r')
+i = 0
+j = 8
+out = ''
+data = f.read()
+for char in data:
+    out += chr(ord(char) ^ header[i % len(header)])
+    i += 1
+key = out[0:12]
+print 'Found key: {0}'.format(key)
+output = ''
+
+f = open('magic.png', 'r')
+i = 0
+data = f.read()
+for char in data:
+    output += chr(ord(char) ^ ord(key[i % len(key)]))
+    i += 1
+
+f = open('decrypted.png', 'w')
+f.write(output)
