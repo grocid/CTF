@@ -117,7 +117,7 @@ algorithm brokenbox(m):
     output: secret exponent d
 
 	precomputation:
-	    compute Q[mⁱ] = i for i ∈ {2,3...,1024}
+	    compute Q[mⁱ] = i for i ∈ {0,1...,1024}
 
 	online computation:
 		1. query oracle for signature of m
