@@ -1,6 +1,6 @@
 # Collection of CTF solutions
 
-This is an index of the CTF solutions I have published on [my blog](www.grocid.net). Most of them are complete.
+This is an index of the CTF solutions I have published on [my blog](https://www.grocid.net). Most of them are complete.
 
 ### 0CTF
 
