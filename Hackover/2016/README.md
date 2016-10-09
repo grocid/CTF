@@ -11,7 +11,7 @@ nc challenges.hackover.h4q.it 1415
 
 When connecting, you get something like
 
-```
+```python
 	Welcome to rollthedice!
 	We use a cool cryptographic scheme to do fair dice rolls.
 	You can easily proof that I don't cheat on you.
