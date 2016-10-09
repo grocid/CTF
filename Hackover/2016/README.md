@@ -11,7 +11,7 @@ nc challenges.hackover.h4q.it 1415
 
 When connecting, you get something like
 
-```python
+```
 	Welcome to rollthedice!
 	We use a cool cryptographic scheme to do fair dice rolls.
 	You can easily proof that I don't cheat on you.
@@ -27,7 +27,7 @@ Client and server each picks a secret random key k₁ and k₂. Each party then 
 The problem is how the dice rolls are encoded and decoded. Basically, a dice roll is stored as a uint16 the upper part of the plaintext. The remaing parts contain only random junk. So, we should be able to commit to the very same ciphertext at all times and pick keys depending on what dice roll the server got. Assume that we are sending 1 for the all-zero key. Then, with this particular ciphertext, we need to find a k such that it decrypts to 2, 3, and so on. Once all have been found we can cheat in this commitment scheme. Here is some Python code to achieve this part:
 
 
-```
+```python
 def build_forged_table():
     global forged_table
     enckey =  '\x00'*16
