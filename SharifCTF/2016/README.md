@@ -123,7 +123,7 @@ fenc.write('\n'.join(A))
 fenc.close()
 ```
 
-The first thing we determine is q. We can do this by computing the difference between ciphertexts, since then the part rand + 1 will cancel out, leaving something 
+The first thing we determine is q. We can do this by computing the difference between ciphertexts, since then the part rand + 1 will cancel out, leaving something which is a multiple of q (and not rand, since it it differs by 1). Doing the same things as in the previous challenge, we can filter out additional factors.
 
 
 ```python
@@ -137,4 +137,65 @@ for n in range(0, len(numbers)-1, 3):
     u = gcd(numbers[n+1] - numbers[n], numbers[n+2] - numbers[n])
     if gmpy.is_prime(u):
         print u
+```
+
+This gives that
+
+```python
+q = 165269599219445291398173635845501465893177201997714520052835716101366991703599089397287042721096067409772119897046741565500293370740283586460353393394630534349929558358109284225649030217655081372910120058487153005673592680613247698577655983823064226042058852387960865050147174483989378148446338590249438249083
+```
+
+From the assertion in the code, we assume that p₁ and p₂ are pretty close, differing by about ~ 10⁸. A simple brute force can be done as follows:
+
+```python
+m = gmpy.root((q-1)/2, 2)[0]
+
+for i in range(0, 2**25):
+    if (q-1) % m == 0:
+        print m
+    m += 1
+```
+
+We find that
+
+```python
+p1 = 9090368507916642523150386537322321669636426087368916042946887058939035329547274618743911402935105936038626517888669029591219526735351668782037241444579211 
+p2 = (q-1)/p1/2
+```
+
+Knowing q, we can now also find rand (key), as an encrypted ciphertext c mod q = rand + 1:
+
+```python
+key = 27520790357638948793357070133680303498308234098213169355930451551473551610668598275338166450612066732646304998053583305691477103900019807357983049075051458007108229556072342519889701952853559033481920882888665392738949159879012748283810392571373411251358969454208761074291792134766062048754841099848058011309
+```
+
+Finally, we get the ciphertext as
+
+```python
+f = open('enc.txt', 'r')
+for line in f:
+    numbers.append((int(line)-key-1) // key // q)
+    key += 1
+	
+binrep = ''
+for u in numbers:
+    if pow(u,  2*p2, q) == 1:
+        binrep += '1'
+    else:
+        binrep += '0'
+enc = int(binrep,2)
+
+enc = (libnum.n2s(enc))
+key = (libnum.n2s(key))
+
+IV = key[16:32]
+mode = AES.MODE_CBC
+aes = AES.new(key[:16], mode, IV=IV)
+print aes.decrypt(enc)
+```
+
+which prints
+
+```
+'** SharifCTF{10ED2D76BCC417D9C48BE67F6790AF70}**'
 ```
