@@ -104,22 +104,26 @@ This is an index of the CTF solutions I have published on [my blog](https://www.
 
 # CTF problems I have created
 
-## Midnightsun 2019 Quals
+### Midnightsun 2019 Quals
 
 [tulpan257](https://ctftime.org/task/8074)<br>
 [open-gyckel-krypto](https://ctftime.org/task/8073)<br>
 [EZDSA](https://ctftime.org/task/8065)
 
-## Midnightsun 2018 Quals
+### Midnightsun 2018 Quals
 [Snurre80](https://github.com/midnight-sun-ctf/challenges2018/tree/master/qualifiers/snurre80)<br>
 [Hm4c](https://github.com/midnight-sun-ctf/challenges2018/tree/master/qualifiers/hm4c)
 
-## Midnightsun 2018 Finals
+### Midnightsun 2018 Finals
 [snurre128](https://github.com/midnight-sun-ctf/challenges2018/tree/master/finals/snurre128)<br>
 [badchair](https://github.com/midnight-sun-ctf/challenges2018/tree/master/finals/badchair)<br>
 [zilch-konstigheter](https://github.com/midnight-sun-ctf/challenges2018/tree/master/finals/zilch-konstigheter)
 
-## SEC-T 2018
+### SEC-T 2018
 [Matsign](https://ctftime.org/task/6661)<br>
 [Marty0ska1](https://ctftime.org/task/6628) (broken)<br>
 [gsh](https://ctftime.org/task/6619)
+
+### SEC-T 2017
+[qproximity](https://ctftime.org/task/4611)<br>
+[madlog](https://ctftime.org/task/4617)
