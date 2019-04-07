@@ -104,22 +104,22 @@ This is an index of the CTF solutions I have published on [my blog](https://www.
 
 # CTF problems I have created
 
-## SEC-T 2018
-[Matsign](https://ctftime.org/task/6661)
-[Marty0ska1](https://ctftime.org/task/6628) (it was broken)
-[gsh](https://ctftime.org/task/6619)
-
 ## Midnightsun 2019 Quals
 
-[tulpan257](https://ctftime.org/task/8074)
-[open-gyckel-krypto](https://ctftime.org/task/8073)
+[tulpan257](https://ctftime.org/task/8074)<br>
+[open-gyckel-krypto](https://ctftime.org/task/8073)<br>
 [EZDSA](https://ctftime.org/task/8065)
 
 ## Midnightsun 2018 Quals
-[Snurre80](https://github.com/midnight-sun-ctf/challenges2018/tree/master/qualifiers/snurre80)
+[Snurre80](https://github.com/midnight-sun-ctf/challenges2018/tree/master/qualifiers/snurre80)<br>
 [Hm4c](https://github.com/midnight-sun-ctf/challenges2018/tree/master/qualifiers/hm4c)
 
 ## Midnightsun 2018 Finals
-[snurre128](https://github.com/midnight-sun-ctf/challenges2018/tree/master/finals/snurre128)
-[badchair](https://github.com/midnight-sun-ctf/challenges2018/tree/master/finals/badchair)
+[snurre128](https://github.com/midnight-sun-ctf/challenges2018/tree/master/finals/snurre128)<br>
+[badchair](https://github.com/midnight-sun-ctf/challenges2018/tree/master/finals/badchair)<br>
 [zilch-konstigheter](https://github.com/midnight-sun-ctf/challenges2018/tree/master/finals/zilch-konstigheter)
+
+## SEC-T 2018
+[Matsign](https://ctftime.org/task/6661)<br>
+[Marty0ska1](https://ctftime.org/task/6628) (broken)<br>
+[gsh](https://ctftime.org/task/6619)
