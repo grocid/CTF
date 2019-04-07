@@ -100,3 +100,26 @@ This is an index of the CTF solutions I have published on [my blog](https://www.
 
 [XXY](https://grocid.net/2016/03/27/volgactf-xxy/) (300 points)<br>
 [Lazy](https://grocid.net/2016/03/27/volgactf-lazy/) (250 points)
+
+
+# CTF problems I have created
+
+## SEC-T 2018
+[Matsign](https://ctftime.org/task/6661)
+[Marty0ska1](https://ctftime.org/task/6628) (it was broken)
+[gsh](https://ctftime.org/task/6619)
+
+## Midnightsun 2019 Quals
+
+[tulpan257](https://ctftime.org/task/8074)
+[open-gyckel-krypto](https://ctftime.org/task/8073)
+[EZDSA](https://ctftime.org/task/8065)
+
+## Midnightsun 2018 Quals
+[Snurre80](https://github.com/midnight-sun-ctf/challenges2018/tree/master/qualifiers/snurre80)
+[Hm4c](https://github.com/midnight-sun-ctf/challenges2018/tree/master/qualifiers/hm4c)
+
+## Midnightsun 2018 Finals
+[snurre128](https://github.com/midnight-sun-ctf/challenges2018/tree/master/finals/snurre128)
+[badchair](https://github.com/midnight-sun-ctf/challenges2018/tree/master/finals/badchair)
+[zilch-konstigheter](https://github.com/midnight-sun-ctf/challenges2018/tree/master/finals/zilch-konstigheter)
