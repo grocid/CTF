@@ -88,7 +88,7 @@ This is an index of the CTF solutions I have published on [my blog](https://www.
 
 ### TWCTF
 
-####2016
+#### 2016
 [Palindrome](TWCTF/2016#palindrome-30-p) (30 points)<br>
 [Twin Primes](TWCTF/2016#twin-primes-50-p) (50 points)<br>
 [Super Express](TWCTF/2016#super-express-100-p) (100 points)<br>
@@ -111,7 +111,7 @@ This is an index of the CTF solutions I have published on [my blog](https://www.
 [EZDSA](https://ctftime.org/task/8065)
 
 ### Midnightsun 2018 Quals
-[Snurre80](https://github.com/midnight-sun-ctf/challenges2018/tree/master/qualifiers/snurre80)<br>
+[snurre80](https://github.com/midnight-sun-ctf/challenges2018/tree/master/qualifiers/snurre80)<br>
 [Hm4c](https://github.com/midnight-sun-ctf/challenges2018/tree/master/qualifiers/hm4c)
 
 ### Midnightsun 2018 Finals
